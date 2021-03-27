@@ -6,6 +6,7 @@ import math
 app = Flask(__name__)
 model = pickle.load(open('uber_rides.pkl','rb'))
 
+
 @app.route('/')
 def home():
     return render_template('index.html')
