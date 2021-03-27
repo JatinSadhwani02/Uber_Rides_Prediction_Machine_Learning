@@ -1,0 +1,39 @@
+
+
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+html { width: 100%; height:100%; overflow:hidden; }
+
+body { 
+
+	font-family: 'Open Sans', sans-serif;
+	background: #00416A;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-size: 18px;
+	text-align:center;
+	letter-spacing:1.2px;
+}
+
+input { 
+	width: 50%; 
+	margin-bottom: 10px; 
+	background:black;
+
+	padding: 10px;
+	font-size: 13px;
+	color: white;
+	
+	border: 1px solid rgba(43, 71, 131, 0.3);
+	border-radius: 4px;
+}
+button{
+	width: 50%;
+	padding: 10px;
+	color: white;
+	background: rgba(34, 14, 14, 0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	font-size: 13px;
+}
