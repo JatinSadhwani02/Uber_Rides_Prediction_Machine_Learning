@@ -1,16 +1,16 @@
 import numpy as np
 from flask import Flask, request, render_template
-import pickle
+import joblib
 import math
 
 app = Flask(__name__)
-model = pickle.load(open('uber_rides.pkl','rb'))
+model = joblib.load('uber_rides.sav')
 
-@app.route('/')
+@app.route('/',methods=['POST','GET'])
 def home():
     return render_template('index.html')
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST','GET'])
 def predict():
     int_features  = [int(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
