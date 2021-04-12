@@ -6,7 +6,12 @@ import math
 app = Flask(__name__)
 model = joblib.load('uber_rides.sav')
 
+<<<<<<< HEAD
 @app.route('/',methods=['POST','GET'])
+=======
+
+@app.route('/')
+>>>>>>> a973a0350c676c0316bb59b1c5a915d783c8e73e
 def home():
     return render_template('index.html')
 
